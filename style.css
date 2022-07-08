@@ -67,9 +67,31 @@ option{
     transform: translate(-50%,-10%);
     font-size: 20px;
 }
+.selected{
+    color: red;
+}
 @media only screen and (max-width: 600px) {
     .logo{
         display: none;
     }
+}
+.link{
+    margin-left: 10px;
+}
+.link i{
+    color: red;
+    margin-right: 5px;
+}
+.link .tab{
+    width: 50%;
+}
+.link li{
+    margin-top: 2px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 2px;
+    padding-right: 5%;
+    border: 1px solid black;
 }
 
