@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 body{
     background: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 194, 243));
@@ -23,6 +23,7 @@ body{
     margin-top: 15px;
     margin-left: 15px;
     color: black;
+    text-shadow: 0.8px 0.5px;
 }
 .hdr p{
     float: right;
@@ -78,15 +79,18 @@ option{
     }
 }
 .link{
+    width: 25%;
     margin-left: 10px;
+    display: unset;
 }
 .link i{
     color: red;
     margin-right: 5px;
 }
 .link .tab{
-    width: 20%;
-    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 .link li{
     margin-top: 2px;
@@ -110,12 +114,20 @@ option{
     .link .tab{
         display: none;
     }
+    .container{
+        position: absolute;
+        left: 0;
+    }
+}
+.main{
+    display: flex;
+    position: relative;
 }
 .container{
-    margin-left: 21%;
+    margin-left: 0;
     border: 1px solid gray;
-    width: 79%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 .container h3, p, img{
     padding: 10px;
