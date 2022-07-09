@@ -9,8 +9,8 @@ body{
     background-repeat: no-repeat;
 }
 .logo{
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     float: left;
     margin-right: 10px;
     margin-top: 10px;
@@ -20,8 +20,8 @@ body{
     height: 75px;
 }
 .hdr h3{
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
     color: black;
 }
 .hdr p{
@@ -86,6 +86,7 @@ option{
 }
 .link .tab{
     width: 20%;
+    position: fixed;
 }
 .link li{
     margin-top: 2px;
@@ -109,4 +110,32 @@ option{
     .link .tab{
         display: none;
     }
+}
+.container{
+    margin-left: 21%;
+    border: 1px solid gray;
+    width: 79%;
+    height: 100vh;
+}
+.container h3, p, img{
+    padding: 10px;
+}
+.container img{
+    opacity: 0.8;
+}
+.container img:hover{
+    opacity: 1;
+}
+.container div{
+    display: flex;
+    position: relative;
+    border: 1px solid salmon;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.container i{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
 }
