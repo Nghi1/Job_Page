@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 body{
     background: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 194, 243));
     background-repeat: no-repeat;
 }
 .logo{
-    width: 4em;
+    width: 6em;
     height: 4em;
     float: left;
     margin-right: 10px;
@@ -22,22 +23,23 @@ body{
 .hdr h3{
     margin-top: 15px;
     margin-left: 15px;
-    color: black;
-    text-shadow: 0.8px 0.5px;
+    color: salmon;
+    text-shadow: 1px 0.8px;
 }
 .hdr p{
     float: right;
-    color: black;
+    color: #222;
 }
 .profile{
+    margin-top: 10px;
     width: 15px;
     border: none;
     background: transparent;
     float: right;
-    color: black;
+    color: #222;
 }
 option{
-    color: black;
+    color: #222;
     font-size: medium;
 }
 .dir{
@@ -48,13 +50,16 @@ option{
     position: relative;
     margin-left: 10px;
     margin-top: 10px;
-    border-radius: 10px;
     width: 100px;
     height: 70px;
+    color: #222;
+    padding: 0;
+    transition: 0.5s;
 }
 .home:hover{
-    background-color: rgb(250, 80, 216);
-    color: white;
+    color: azure;
+    width: 120px;
+    height: 90px;
 }
 .home i{
     position: absolute;
@@ -151,11 +156,28 @@ option{
     right: 20px;
     cursor: pointer;
 }
+.container div:last-child{
+    width: 15%;
+    height: 2em;
+    border: none;
+}
+.container div:last-child a{
+    width: 20%;
+    padding: 5px 0;
+    text-align: center;
+    color: red; 
+    border: 1px solid salmon;
+    margin-right: 5px;
+}
+.container div:last-child a:hover{
+    background: gainsboro;
+    border-radius: 5px;
+}
 .footer{
     margin-top: 5px;
     width: 100%;
     height: 25vh;
-    background: gray;
+    background: linear-gradient(to top, rgb(255, 194, 243), rgba(255,0,0,0));    
     display: flex;
 }
 .footer img{
@@ -169,7 +191,7 @@ option{
     width: 33%;
 }
 .footer .copyright{
-    margin-top: 120px;
+    margin-top: 150px;
     text-align: center;
     width: 33%;
 }
@@ -178,6 +200,7 @@ option{
     text-align: center;
     width: 33%;
 }
-.footer .linkto li{
+.footer .linkto li, a{
+    text-decoration: none;
     list-style-type: none;
 }
