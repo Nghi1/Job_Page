@@ -116,17 +116,15 @@ option{
     background-color: gainsboro;
 }
 @media only screen and (max-width: 1050px) {
+    .main{
+        flex-direction: column;
+    }
     .link .tab{
         display: none;
-    }
-    .container{
-        position: absolute;
-        left: 0;
     }
 }
 .main{
     display: flex;
-    position: relative;
 }
 .container{
     margin-left: 0;
