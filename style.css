@@ -6,7 +6,7 @@
     font-family: 'Merriweather', serif;
 }
 body{
-    background: linear-gradient(to top, rgba(255,0,0,0), rgb(255, 194, 243));
+    background: linear-gradient(to top, rgba(255,0,0,0), rgb(140, 228, 255));
     background-repeat: no-repeat;
 }
 .logo{
@@ -23,7 +23,7 @@ body{
 .hdr h3{
     margin-top: 15px;
     margin-left: 15px;
-    color: salmon;
+    color: #222;
     text-shadow: 1px 0.8px;
 }
 .hdr p{
